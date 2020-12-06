@@ -17,7 +17,7 @@ jobs:
       id: word
       uses: actions/docker-action@v1
       with:
-        write-a-worldt: 'e2517 Software Engineer'
+        write-a-world: 'e2517 Software Engineer'
     # Use the output from the `word` step
     - name: Get the output time
       run: echo "The time was ${{ steps.word.outputs.time }}"
