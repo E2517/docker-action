@@ -17,11 +17,11 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: Hello ... action step
         uses: ./ # Uses an action in the root directory
-        id: hello
+        id: word
         with:
-          who-to-greet: "Mona the Octocat"
-      # Use the output from the `hello` step
+          who-to-greet: "e2517 Software Enginner"
+      # Use the output from the `word` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was ${{ steps.word.outputs.time }}"
