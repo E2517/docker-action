@@ -16,7 +16,7 @@ El tiempo en que lo saludamos.
 
 ## Ejemplo de uso
 
-uses: actions/hello-world-docker-action@v1
+uses: actions/docker-action@v1
 with:
 who-to-greet: 'Mona the Octocat'
 
