@@ -2,9 +2,9 @@ name: Docker action public
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   workflow_dispatch:
 
@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to write something
     steps:
-    - name: Write someting
-      id: word
-      uses: actions/docker-action@v1
-      with:
-        write-a-world: 'e2517 Software Engineer'
-    # Use the output from the `word` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.word.outputs.time }}"
+      - name: Write someting
+        id: word
+        uses: actions/write-something-docker-action@v1
+        with:
+          write-a-world: "e2517 Software Engineer"
+      # Use the output from the `word` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.word.outputs.time }}"
