@@ -1,18 +1,18 @@
 # Acción de docker Hello world
 
-Esta acción imprime "Hello World" o "Hello" + el nombre de una persona a quien saludar en el registro.
+Esta acción imprime "Hello World" o "Hello" + lo que quieras escribir.
 
 ## Entradas
 
 ### ` write-a-word`
 
-**Obligatorio** El nombre de la persona a quien saludar. Default `"World"`.
+**Obligatorio** Escribe algo para que se muestre. Default `"World"`.
 
 ## Outputs
 
 ### `time`
 
-El tiempo en que lo saludamos.
+El tiempo en que escribimos algo.
 
 ## Git commands
 
