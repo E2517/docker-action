@@ -11,13 +11,13 @@ on:
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to write something
+    name: A job to say hello
     steps:
-      - name: Write someting
-        id: word
-        uses: actions/write-something-docker-action@v1
+      - name: Hello world action step
+        id: hello
+        uses: actions/hello-world-docker-action@v1
         with:
-          write-a-world: "e2517 Software Engineer"
-      # Use the output from the `word` step
+          who-to-greet: "Mona the Octocat"
+      # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.word.outputs.time }}"
+        run: echo "The time was ${{ steps.hello.outputs.time }}"

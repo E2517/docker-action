@@ -1,16 +1,16 @@
 # action.yml
-name: "Write Something"
-description: "Docker action with GitHub actons"
+name: "Hello World"
+description: "Greet someone and record the time"
 inputs:
-  write-a-word: # id of input
-    description: "Write something"
+  who-to-greet: # id of input
+    description: "Who to greet"
     required: true
     default: "World"
 outputs:
   time: # id of output
-    description: "Coded by e2517"
+    description: "The time we greeted you"
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.write-a-world }}
+    - ${{ inputs.who-to-greet }}
