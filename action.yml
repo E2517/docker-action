@@ -1,5 +1,5 @@
 # action.yml
-name: "Hello World"
+name: "Write Something"
 description: "Docker action with GitHub actons"
 inputs:
   write-a-word: # id of input
